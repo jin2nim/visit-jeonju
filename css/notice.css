@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Binggrae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url( http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300 ); 
+
+body {
+    overflow-x: hidden !important;
+    color: #2b1c1f;
+}
+
+section {
+    width: 100%;
+}
+
+img {padding:0;margin:0;border:0;}
+.clearfix:before,.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+
+
+/* 상단 */
+
+.ntop-area {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(../img/index/slide1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* .ntop-area img:nth-child(1) {
+    height: 100% !important;
+    width: auto !important;
+} */
+
+.logo-img {
+    position: absolute;
+    width: 8%;
+    border-radius: 100%;
+    border: 1px solid #676767;
+    padding: 0.5%;
+    left: 46%;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+
+/* 컨텐츠부분 */
+
+.notice-area {
+    width: 68%;
+    margin: 100px auto;
+}
+
+.notice-area h2 {
+    font-size: 3.5vh;
+    color: #673b90;
+}
+
+.notice-summery {
+    width: 100%;
+    background-color: #673b90;
+    margin-top: 30px;
+    display: flex;
+}
+
+.notice-contain {
+    width: 100%;
+    border-bottom: 1px solid #673b90;
+    padding: 0.5%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.notice-summery p {
+    color: white;
+    text-align: center;
+    padding: 1% 2%;
+    box-sizing: border-box;
+    font-size: 10pt;
+    display: flex;
+}
+.notice-contain p {
+    font-size: 10pt;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.notice-num {
+    width: 10%;
+}
+
+.notice-title {
+    width: 70%;
+    justify-content: center;
+}
+.notice-date {
+    width: 20%;
+}
+
+/*
+.n-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    justify-content: left;
+    word-break: break-all;
+}
+*/
+
+
+.page-number {
+    width: 100%;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.page-number p {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.page-number p a:first-child, .page-number p a:last-child {
+    color: #673b90;
+}
+
+.page-number p a {
+    font-weight: 400;
+    margin-left: 2%;
+}
+
+.page-number p a:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width:1400px) {
+    
+    .ntop-area {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .ntop-area>img:nth-child(1) {
+        width: 8%;
+    }
+
+    .notice-area {
+        width: 75%;
+    }
+
+    .notice-area h2 {
+        font-size: 3.5vh;
+        color: #673b90;
+    }
+
+    .notice-summery {
+        width: 100%;
+        background-color: #673b90;
+        margin-top: 30px;
+    }
+
+    .notice-contain {
+        width: 100%;
+        border-bottom: 1px solid #673b90;
+        padding: 0.5%;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    .ntop-area {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .ntop-area>img:nth-child(1) {
+        width: 9%;
+    }
+
+    .notice-area {
+        width: 83%;
+    }
+
+    .notice-area h2 {
+        font-size: 3.5vh;
+        color: #673b90;
+    }
+
+    .notice-summery {
+        width: 100%;
+        background-color: #673b90;
+        margin-top: 30px;
+    }
+
+    .notice-contain {
+        width: 100%;
+        border-bottom: 1px solid #673b90;
+        padding: 0.5%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+@media screen and (max-width:720px) {
+    .ntop-area {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .ntop-area>img:nth-child(1) {
+        width: 15%;
+    }
+
+    .notice-area {
+        width: 92%;
+    }
+
+    .notice-area h2 {
+        font-size: 3.5vh;
+        color: #673b90;
+    }
+
+    .notice-summery {
+        width: 100%;
+        background-color: #673b90;
+        margin-top: 30px;
+    }
+
+    .notice-contain {
+        width: 100%;
+        border-bottom: 1px solid #673b90;
+        padding: 0.5%;
+        box-sizing: border-box;
+    }
+    
+    .notice-summery p {
+        font-size: 10pt;
+    }
+
+    .notice-num {
+        width: 15%;
+        text-align: center;
+        float: left;
+    }
+
+    .notice-title {
+        width: 65%;
+        /* background-color: yellow; */
+        float: left;
+    }
+    .notice-date {
+        width: 20%;
+        /* background-color: pink; */
+    }
+}

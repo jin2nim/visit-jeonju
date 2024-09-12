@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 네이버최적화 소유권확인 -->
+    <meta name="naver-site-verification" content="" />
+    <!-- 페이지 설명 : 이게 있어야 검색 가능 -->
+    <meta name="description" content="전주여행의 모든것! visitjeonju">
+    <!-- 노출키워드 -->
+    <meta name="keywords" content="전주, 전주여행, jeonju, travel, koreatravel, jeonjutravel">
+    <!-- 선호URL -->
+    <link rel="canonical" href="https://visitjeonju.net">
+
+
+
+    <!-- Open grapy : 카톡 공유하기 했을 때 뜨는 거 -->
+
+    <!-- 필수는 아닌데, 하단에 URL링크 뜨니까 간결한걸로 써주기 -->
+    <meta property="og:url" content="visitjeonju.net"/>
+    <!-- 공유하는 링크의 타입 필수X -->
+    <meta property="og:type" content="website"/>
+    <!-- 페이지 제목 -->
+    <meta property="og:title" content="VISITJEONJU"/>
+    <!-- 페이지 설명 길게 안들어가니까 짧게 쓰기! -->
+    <meta property="og:description" content="전주여행의 모든 것, visitjeonju official"/>
+    <!-- 페이지랑 같이 뜨는 이미지 -->
+    <meta property="og:image" content="http://visitjeonju.net/main-img.png"/>        
+    
+    <title>Visit Jeonju</title>
+    <!-- 타이틀에 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <!-- 반응형 css -->
+    <link rel="stylesheet" href="css/notice-con.css">
+    <!-- <link rel="stylesheet" href="css/rwd-mobile.css"> -->
+    
+    <!-- 헤더/푸터 css -->
+    <link rel="stylesheet" href="css/hf.css">
+    <!-- 자바스크립트 기본 스타일시트 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <!-- 스크립트 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- 스와이퍼 스크립트 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- fancybox script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- 인스타그램 피드 가져오기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- 우클릭 금지 스크립트 -->
+    <script type="text/javascript">
+		var omitformtags=["input", "textarea", "select"]
+		omitformtags=omitformtags.join("|")
+		function disableselect(e){
+		if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+		return false
+		}
+		function reEnable(){
+		return true
+		}
+		if (typeof document.onselectstart!="undefined")
+		document.onselectstart=new Function ("return false")
+		else{
+		document.onmousedown=disableselect
+		document.onmouseup=reEnable
+		}
+	$(document).ready(function(){
+	  $(document).bind('keydown', function(e) {
+		if(e.keyCode == 123) {
+		  e.preventDefault();
+		  e.returnValue = false;
+		}
+	  });
+	});
+	</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPTEH3PNHQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GPTEH3PNHQ');
+
+    gtag('config', 'AW-375202685');
+    </script>
+
+</head>
+
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div class="site-wrap" id="a0">
+        <header>
+            <div class="header-area">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="img/index/h-logo.png" alt="흥학행">
+                    </a>
+                </h1>
+                <div class="menu-btn"><img src="img/menu-btn.png" alt="메뉴"></div>
+
+                <nav>
+                    <div class="close-btn"><img src="img/close-btn.png" alt="X"></div>
+                    <ul>
+                        <li><a href="#num2">JEONJU HOT SPOTS</a></li>
+                        <li><a href="#num3">VISIT JEONJU TV</a></li>
+                        <li><a href="#num4">VISIT JEONJU EVENTS</a></li>
+                        <li class="main-menu">
+                            <a href="#">LEARN MORE</a>
+                            <ul class="sub-menu">
+                                <li><a href="notice.html">NOTICE</a></li>
+                                <li><a href="https://tour.jeonju.go.kr/index.9is" target="_blank">tour.jeonju.official</a></li>
+                                <li><a href="https://blog.naver.com/jeonju_city" target="_blank">JEONJU's BLOG [KR]</a></li>
+                                <li><a href="https://jeonjucity.kr/category/jeonju-culture/" target="_blank">JEONJU's BLOG [ENG]</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="notice-con-1-kr.html">KR</a></li>
+                        <li><a href="index.html"><img src="img/index/h-logo.png" alt="흥학행문화보부상"></a></li>
+                    </ul>
+                </nav>
+            </div> <!-- header-area end -->
+            <div class="h-bg"></div>
+            <div class="s-bg"></div>
+        </header>
+
+        <script>
+            $(function(){
+                $('.main-menu').click(function(){
+                    $('.sub-menu').slideToggle();
+                });
+                $('.main-menu').hover(function(){
+                    $('.s-bg').slideToggle();
+                });
+
+                $('.m-menu-btn').click(function(){
+                    $('nav').show();
+                });
+                $('.m-menu-btn').click(function(){
+                    $('.close-area').show();
+                });
+                $('.close-area').click(function(){
+                    $('nav').hide();
+                });
+                $('.close-area').click(function(){
+                    $('.close-area').hide();
+                });
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 50)
+                    $('.h-bg').slideDown(300)
+                    else {
+                    $('.h-bg').slideUp(300)
+                    }
+                });
+            });
+        </script>
+
+        <section class="ntop-area">
+            <img src="img/index/logo_c-12.png" alt="로고" class="logo-img">
+        </section>
+
+        <section class="contant-area">
+            <div class="con-title">
+                <div class="con1">TITLE</div>
+                <div class="con2">JEONJU Logo Song Challenge [ENJOY YOUR JEONJU]</div>
+            </div>
+            <div class="con-date">
+                <div class="con1">DATE</div>
+                <div class="con2">21.11.19</div>
+            </div>
+            <div class="con-file">
+                <div class="con1">FILE</div>
+                <div class="con2">No attached file</div>
+            </div>
+            <div class="con-text">
+
+                <img src="img/index/gdn-img300x250.jpg" alt="이미지1">
+                <br>
+                <br>
+                <br> The Jeonju Logo Song Challenge is here~ :)
+                <br> The Jeonju Logo Song Challenge worth approximately <span style="color: red;">KRW 2 millon</span> in prize money is now on its way!
+                <br> Fusion music, Pop, RAP, or acoustic music...
+                <br> Creat your very own song of any genre to promote the city of Jeonju and its story!✨
+                <br> We look forward to listening to and sharing your creative logo songs together.
+                <br>
+                <br>
+                <br>
+                <br> <a href="https://www.instagram.com/p/CWFqJ4Sv95y/">👉 Detailed info on Instagram </a>
+                
+            </div>
+
+            <div class="menu">
+                <!-- 
+                <p><a href=""><span>▲</span>앞 게시글 제목</a></p>
+                 -->
+                <p><a href="notice-con-2.html"><span>▲</span>Office Attack Campaign</a></p>
+                
+                <p><a href="notice.html">LIST</a></p>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <div class="ezen-info">
+                    <p class="info-title">
+                        <img src="img/index/h-logo.png" alt="logo">
+                    </p>
+                    <p class="info-text">
+                        213, Girin-daero, Wansan-gu, Jeonju-si, Jeollabuk-do, Republic of Korea
+                    </p>
+                </div> <!-- ezen-info end -->
+                
+                <div class="quick-link">
+                    <a href="tel:1566-3299">1566-3299</a>
+                    <!-- <a href="mailto:contact@xcrew.co.kr">contact@xcrew.co.kr</a> -->
+                    <p>Copyright© 2021. JEONJU CITY. All RIGHTS RESERVED.</p>
+                </div> <!-- quick-link end -->
+            </div> <!-- footer-top end -->
+        </footer>
+    </div> <!-- site-wrap end -->
+    
+    <!-- 네이버 애널리틱스 -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d7038786d076f8";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+    
+</body>
+</html>
